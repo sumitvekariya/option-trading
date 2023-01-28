@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type DeribitResponse {
+  volume: Float!
+  underlying_price: Float!
+  underlying_index: String!
+  quote_currency: String!
+  price_change: Float
+  open_interest: Float
+  mid_price: Float
+  mark_price: Float
+  low: Float
+  last: Float
+  interest_rate: Int!
+  instrument_name: String!
+  high: Float
+  estimated_delivery_price: Float!
+  creation_timestamp: Float!
+  bid_price: Float
+  base_currency: String!
+  ask_price: String
+}
+
+type Query {
+  getDeribitResponse(currency: String!): [DeribitResponse!]!
+}
